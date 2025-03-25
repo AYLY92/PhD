@@ -1,6 +1,6 @@
 ### Repository Structure
 1. **`app` Directory**:
-   - **Description**: Contains the application code.
+   **Description**: Contains the application code.
 2. **`data` Directory**:
    - **Description**: Contains input and output data for the models.
 3. **`figures` Directory**:
