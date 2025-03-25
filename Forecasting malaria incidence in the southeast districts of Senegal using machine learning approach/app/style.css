@@ -1,0 +1,197 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #3498db; /* Remplacez par la couleur souhaitée */
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .nav-link {
+    color: black;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    background-color: #1b85ff !important;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    cursor: pointer; /* Ajoutez le curseur de la main */
+}
+
+.navbar-brand:hover {
+    color: #1b85ff !important; /* Effet de survol */
+}
+
+/* Modifiez l'affichage des onglets */
+.navbar .nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #d6eaf8 !important;
+    padding: 10px;
+    border-radius: 8px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 20px; /* Ajoutez un espace entre le bas du sidebar et le bas de la page */
+}
+
+.sidebar .input-group {
+    margin-bottom: 15px;
+}
+
+.sidebar .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.sidebar .input-group input,
+.sidebar .input-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sidebar .input-group input:focus,
+.sidebar .input-group select:focus {
+    border-color: #1b9bff;
+    outline: none;
+}
+
+.sidebar .input-action-button {
+    background-color: #0082e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .input-action-button:hover {
+    background-color: #1b9bff;
+}
+
+/* Contenu principal */
+.content {
+    padding: 5px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.card-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles pour les graphiques et la carte */
+#prediction_plot,
+#map_plot {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le bouton Visualize */
+#visualize_button {
+    background-color: #1b85ff !important;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#visualize_button:hover {
+    background-color: #1b9bff !important;
+}
+
+#visualize_button:active {
+    background-color: #1b9bff !important;
+}
+
+
+#download_csv {
+    background-color: #1b85ff !important;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#download_csv:hover {
+    background-color: #1b9bff !important;
+}
+
+#download_csv:active {
+    background-color: #1b9bff !important;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        border-right: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
